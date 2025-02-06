@@ -1,0 +1,4 @@
+#
+#Autor: joseph.nassar@msg.group
+#
+results wie logfiles werden in diesem Ordner "results" untergebracht

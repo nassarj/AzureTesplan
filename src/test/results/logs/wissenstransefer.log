@@ -1,0 +1,16 @@
+2024-03-26 11:50:01.918 INFO [main] [de.wissentransfer.tobias.cucumber.steps.CucumberContextConfiguration.setUp(CucumberContextConfiguration.java:25)] - -------------- Spring Context Initialized For Executing Cucumber Tests --------------
+2024-03-26 12:15:55.372 ERROR [main] [de.wissentransfer.tobias.utilities.Logger.logError(Logger.java:34)] - ERROR: java.lang.String cannot be cast to org.apache.poi.ss.usermodel.Cell
+2024-03-26 12:17:51.217 INFO [main] [de.wissentransfer.tobias.cucumber.steps.CucumberContextConfiguration.setUp(CucumberContextConfiguration.java:25)] - -------------- Spring Context Initialized For Executing Cucumber Tests --------------
+2024-03-26 12:32:02.683 INFO [main] [de.wissentransfer.tobias.cucumber.steps.CucumberContextConfiguration.setUp(CucumberContextConfiguration.java:25)] - -------------- Spring Context Initialized For Executing Cucumber Tests --------------
+2024-03-26 12:32:04.509 INFO [main] [de.wissentransfer.tobias.utilities.Logger.logInfo(Logger.java:26)] - CellValue: Bevölkerung kompakt
+ in File: src/test/resources/testdata/Testdaten.xlsx
+ in Sheet: 0
+ in Row: 1
+ in Column: 1
+2024-03-26 16:03:06.632 INFO [main] [de.wissentransfer.tobias.cucumber.steps.CucumberContextConfiguration.setUp(CucumberContextConfiguration.java:25)] - -------------- Spring Context Initialized For Executing Cucumber Tests --------------
+2024-03-26 16:03:11.614 INFO [main] [de.wissentransfer.tobias.utilities.Logger.logInfo(Logger.java:26)] - CellValue: Bevölkerung kompakt
+ in File: src/test/resources/testdata/Testdaten.xlsx
+ in Sheet: 0
+ in Row: 1
+ in Column: 1
+2024-03-26 16:03:11.617 INFO [main] [de.wissentransfer.tobias.utilities.Logger.logInfo(Logger.java:26)] - Bevölkerung kompakt

@@ -1,0 +1,79 @@
+<!--
+ * Autor: joseph.nassar@msg.group
+-->
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+  <id>${version}-lieferpaket</id>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <formats>
+    <format>tar</format>
+    <format>dir</format>
+  </formats>
+
+  <files>
+    <file>
+      <outputDirectory>sources</outputDirectory>
+      <source>${project.build.directory}/${project.artifactId}-${version}-sources.zip
+      </source>
+    </file>
+
+    <file>
+      <outputDirectory>bin</outputDirectory>
+      <source>${project.build.directory}/${project.artifactId}-${version}.jar
+      </source>
+    </file>
+
+  </files>
+
+  <fileSets>
+    <fileSet>
+      <outputDirectory>libraries</outputDirectory>
+      <directory>${project.build.directory}/${project.artifactId}-lib/
+      </directory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+
+    <fileSet>
+      <outputDirectory>config</outputDirectory>
+      <directory>${project.build.directory}/${project.artifactId}-config/
+      </directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+
+    <fileSet>
+      <outputDirectory>bin</outputDirectory>
+      <directory>${project.build.testOutputDirectory}/runScript/
+      </directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+      <fileMode>7777</fileMode>
+    </fileSet>
+
+    <fileSet>
+      <outputDirectory>webdriver</outputDirectory>
+      <directory>${project.build.testOutputDirectory}/webdriver/
+      </directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+      <fileMode>7777</fileMode>
+    </fileSet>
+
+    <fileSet>
+      <outputDirectory>results</outputDirectory>
+      <directory>src/test/results/
+      </directory>
+      <includes>
+        <include>info.txt</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+
+
+</assembly>
